@@ -14,7 +14,7 @@ $ pip install tweepy
 ```
 $ git clone https://github.com/minha-logica/bot-blocklist-tt
 ```
-   **2° passo:** criar uma conta de para desenvolvedores no site do Twitter(
+   **2° passo:** criar uma conta para desenvolvedores no site do Twitter(
 [Twitter for Developers](https://developer.twitter.com/en/apply-for-access)). Na sua conta, crie um novo [App](http://dev.twitter.com/apps) e
 certifique-se de gerar suas credenciais (chaves de acesso e tokens de acesso ). Também é preciso dar permissão de leitura e escrita para seu App.
   
@@ -41,3 +41,9 @@ Finalmente, basta executar o arquivo ```main.py```.
 ```
 $ python main.py
 ```
+Para desfazer os bloqueios substitua `api.block` por `api.unblock` na seguinte linha
+```pyyhon
+ res = api.block(target_user_id=user_id)       
+```
+
+Seja feliz! 🙂
