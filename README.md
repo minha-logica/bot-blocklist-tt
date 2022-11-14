@@ -15,7 +15,7 @@ $ pip install tweepy
 $ git clone https://github.com/minha-logica/bot-blocklist-tt
 ```
    **2° passo:** criar uma conta para desenvolvedores no site do Twitter(
-[Twitter for Developers](https://developer.twitter.com/en/apply-for-access)). Na sua conta, crie um novo [App](http://dev.twitter.com/apps) e
+[Twitter for Developers](https://developer.twitter.com/en/apply-for-access)). Nessa conta, crie um novo [App](http://dev.twitter.com/apps) e
 certifique-se de gerar suas credenciais (chaves de acesso e tokens de acesso ). Também é preciso dar permissão de leitura e escrita para seu App.
   
  
