@@ -19,7 +19,7 @@ $ git clone https://github.com/minha-logica/bot-blocklist-tt
 certifique-se de gerar suas credenciais (chaves de acesso e tokens de acesso ). Também é preciso dar permissão de leitura e escrita para seu App.
   
  
-   **3° passo:** nos arquivos baixados, adicione suas credenciais
+   **3° passo:** nos arquivos baixados, adicione suas credenciais no arquivo `credentials.py`
 ```python
 consumer_key = "CHAVE DE ACESSO" 
 consumer_secret = "CHAVE SECRETA DE ACESSO" 
