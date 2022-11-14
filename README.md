@@ -32,7 +32,7 @@ Exemplo:
 ```python
 usernames = [
     "fulano",
-    "ciclano",
+    "siclano",
     "beltrano"
 ]
 ```
