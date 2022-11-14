@@ -27,7 +27,7 @@ access_token = "TOKEN DE ACESSO"
 access_token_secret = "TOKEN SECRETO DE ACESSO"
 
 ```
-   **4° passo:**  em `main.py` adicione os nomes de usuários que deseja bloquear na lista `usernames`.
+   **4° passo:**  no arquivo `blocklist.py` adicione os nomes de usuários que deseja bloquear na lista `usernames`.
 Exemplo:
 ```python
 usernames = [
