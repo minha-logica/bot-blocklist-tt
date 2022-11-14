@@ -1,7 +1,6 @@
 import tweepy
-from credentials import *
-from blocklist import usernames,unblock
-def block(api, usernames,unblock=False):
+
+def block(api, username,unblock=False):
     try:
         #Busca os usuarios pela lista de usernames
         users = api.get_users(usernames=usernames, user_auth=True)[0]
@@ -24,6 +23,8 @@ def block(api, usernames,unblock=False):
         print("Erro:", erro)
 
 if __name__ == "__main__":
+    from credentials import *
+    from blocklist import usernames,unblock
     #Criando um Cliente para a API 
     api = tweepy.Client(
         consumer_key=consumer_key,
