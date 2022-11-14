@@ -1,5 +1,6 @@
 import tweepy
 from credentials import *
+from blocklist import usernames
 #Criando um Cliente para a API 
 api = tweepy.Client(
     consumer_key=consumer_key,
@@ -7,8 +8,7 @@ api = tweepy.Client(
     access_token= access_token ,
     access_token_secret=access_token_secret)
 try:
-    #Username de cada usuário que será bloqueado
-    usernames = ["USERNAME"]
+    #Percorre o blocklist      
     for username in usernames:
         #Pesquisa o usuário
         user = api.get_user(username=username, user_auth=True)   
