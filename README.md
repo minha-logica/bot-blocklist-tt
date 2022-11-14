@@ -27,7 +27,7 @@ access_token = "TOKEN DE ACESSO"
 access_token_secret = "TOKEN SECRETO DE ACESSO"
 
 ```
-   **4° passo:**  no arquivo `blocklist.py` adicione os nomes de usuários que deseja bloquear na lista `usernames`.
+   **4° passo:**  no arquivo `blocklist.py` adicione os nomes de usuários que deseja bloquear na lista *usernames*.
 Exemplo:
 ```python
 usernames = [
@@ -41,9 +41,10 @@ Finalmente, basta executar o arquivo ```main.py```.
 ```
 $ python main.py
 ```
-Para desfazer os bloqueios substitua `api.block` por `api.unblock` na seguinte linha
-```pyyhon
- res = api.block(target_user_id=user_id)       
+
+Para desfazer os bloqueios substitua `False` por `True` na variável *unblock* no arquivo `blocklist.py`
+```python
+unblock = True
 ```
 
 Seja feliz! 🙂
