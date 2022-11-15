@@ -4,7 +4,14 @@
 Você fornece uma lista com nomes de usuários e o bot bloqueia todos da lista.
 
 ## Como usar?
-Instale as dependências
+
+   Faça o clone do repositório
+```
+$ git clone https://github.com/minha-logica/bot-blocklist-tt
+```
+#### Etapas:
+
+   **1° passo:** Instale as dependências
 ```
 $ pip install -r requeriments.txt
 ```
@@ -12,12 +19,9 @@ Ou
 ```
 $ pip3 install -r requeriments.txt
 ```
-#### Etapas:
 
-   **1° passo:** clonar ou baixar repositório
-```
-$ git clone https://github.com/minha-logica/bot-blocklist-tt
-```
+
+   
    **2° passo:** criar uma conta para desenvolvedores no site do Twitter(
 [Twitter for Developers](https://developer.twitter.com/en/apply-for-access)). Nessa conta, crie um novo [App](http://dev.twitter.com/apps) e
 certifique-se de gerar suas credenciais (chaves de acesso e tokens de acesso ). Também é preciso dar permissão de leitura e escrita para seu App.
