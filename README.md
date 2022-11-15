@@ -4,9 +4,13 @@
 Você fornece uma lista com nomes de usuários e o bot bloqueia todos da lista.
 
 ## Como usar?
-Instale a biblioteca Tweepy
+Instale as dependências
 ```
-$ pip install tweepy
+$ pip install -r requeriments.txt
+```
+Ou
+```
+$ pip3 install -r requeriments.txt
 ```
 #### Etapas:
 
@@ -19,14 +23,17 @@ $ git clone https://github.com/minha-logica/bot-blocklist-tt
 certifique-se de gerar suas credenciais (chaves de acesso e tokens de acesso ). Também é preciso dar permissão de leitura e escrita para seu App.
   
  
-   **3° passo:** nos arquivos baixados, adicione suas credenciais no arquivo `credentials.py`
-```python
-consumer_key = "CHAVE DE ACESSO" 
-consumer_secret = "CHAVE SECRETA DE ACESSO" 
-access_token = "TOKEN DE ACESSO"
-access_token_secret = "TOKEN SECRETO DE ACESSO"
+   **3° passo:** crie um arquivo chamado `.env` no diretório principal dos arquivos baixados. Em seguida, adicione nele
+as seguintes informações preenchendo com suas credenciais:
 
 ```
+CONSUMER_KEY=your_consumer_key
+CONSUMER_SECRET=your_consumer_secret
+ACCESS_TOKEN=your_access_token
+ACCESS_TOKEN_SECRET=your_access_token_secret 
+```
+Obs: Não coloque as credenciais entre aspas.
+
    **4° passo:**  no arquivo `blocklist.py` adicione os nomes de usuários que deseja bloquear na lista *usernames*.
 Exemplo:
 ```python
@@ -37,7 +44,7 @@ usernames = [
 ]
 ```
 
-Finalmente, basta executar o arquivo ```main.py```.
+Enfim, execute o arquivo ```main.py```.
 ```
 $ python main.py
 ```
