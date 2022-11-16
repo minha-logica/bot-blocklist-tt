@@ -1,8 +1,18 @@
 import tweepy
+from decouple import config
 
-def block(api, usernames,unblock=False):
+def get_client():    
+    api = tweepy.Client(
+        consumer_key = config("CONSUMER_KEY"),
+        consumer_secret = config("CONSUMER_SECRET"),
+        access_token = config("ACCESS_TOKEN"),
+        access_token_secret = config("ACCESS_TOKEN_SECRET")
+    )
+    return api
+    
+def block_list(api, usernames,unblock=False):
     try:
-        #Busca os usuarios pela lista de usernames
+        #Busca os usuários pela lista de usernames
         users = api.get_users(usernames=usernames, user_auth=True)[0]
         #Verifica bloqueio ou desbloqueio
         func_block = api.unblock if unblock else api.block
@@ -20,13 +30,9 @@ def block(api, usernames,unblock=False):
         print("Erro:", erro)
 
 if __name__ == "__main__":
-    from credentials import *
-    from blocklist import usernames,unblock
-    #Criando um Cliente para a API 
-    api = tweepy.Client(
-        consumer_key=consumer_key,
-        consumer_secret=consumer_secret,
-        access_token= access_token ,
-        access_token_secret=access_token_secret)
+    from blocklist import usernames, unblock
+    #Obtem a API
+    api = get_client()    
     #Bloqueia ou desbloqueia usuários da lista
-    block(api, usernames, unblock=unblock)
+    block_list(api, usernames, unblock=unblock)
+
