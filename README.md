@@ -13,11 +13,11 @@ $ git clone https://github.com/minha-logica/bot-blocklist-tt
 
    **1° passo:** Instale as dependências
 ```
-$ pip install -r requeriments.txt
+$ pip install -r requirements.txt
 ```
 Ou
 ```
-$ pip3 install -r requeriments.txt
+$ pip3 install -r requirements.txt
 ```
 
 
