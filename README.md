@@ -60,8 +60,9 @@ desbloquei. Será preciso que ele mesmo siga você
 novamente depois do desbloqueio. Não nos responsabilizamos por qualquer prejuízo 
 ou dano.
 
-Obs: só é possível bloquear 50 usuários a cada 15 minutos. 
-Esse limite de requisições é definido pela própria API do Twitter.
+Obs: só é possível bloquear 50 usuários até atingir o limite da
+API do Twitter para esse endpoint. Logo, é preciso aguardar 15 minutos  
+a cada 50 solicitações.
 
 ## Via Código (Nova funcionalidade)
 Crie um arquivo chamado `my_blocklist.py` ou com um nome
