@@ -167,9 +167,3 @@ if __name__ == "__main__":
     blocklist.block(usernames, unblock=True)
     """
 
-
-#:sparkles: feat: Added BlockList and ClientAPI classes.  In this version there is also a method to search and filter followers by profile description.
-
-
-
-           
