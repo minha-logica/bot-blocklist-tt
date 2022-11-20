@@ -17,8 +17,7 @@ class ClientAPI:
     def get_client(self):
         return self.client
 
-                          
-                         	                      
+                                                  	                      
 class BlockList(ClientAPI):
     def __init__(self, filters: list = None, file_path: str = "blocklist.txt"):
         super().__init__()
@@ -152,7 +151,7 @@ if __name__ == "__main__":
 
     blocklist = BlockList(file_path="usernames.txt")
     usernames = blocklist.read()
-    blocklist.block(usernames, unblock=True)
+    blocklist.block(usernames)
     """
     blocklist = BlockList(
     	               filters=[
@@ -167,4 +166,10 @@ if __name__ == "__main__":
     usernames = blocklist.read()            
     blocklist.block(usernames, unblock=True)
     """
-                
+
+
+#:sparkles: feat: Added BlockList and ClientAPI classes.  In this version there is also a method to search and filter followers by profile description.
+
+
+
+           
