@@ -138,7 +138,7 @@ Não nos responsabilizamos por qualquer prejuízo
 ou dano.
 
 # Referências
-[Documentação do Tweepy]()
-[Documentação da API do Twitter]()
+[Documentação do Tweepy](https://docs.tweepy.org/en/stable/client.html)
+[Documentação da API do Twitter](https://developer.twitter.com/en/docs/twitter-api)
 
 Seja feliz! 🙂
