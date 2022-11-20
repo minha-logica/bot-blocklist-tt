@@ -26,7 +26,7 @@ $ pip3 install -r requirements.txt
    **2° passo:** criar uma conta para desenvolvedores no site do Twitter(
 [Twitter for Developers](https://developer.twitter.com/en/apply-for-access)). Nessa conta, crie um novo [App](http://dev.twitter.com/apps) e
 certifique-se de gerar suas credenciais (chaves de acesso e tokens de acesso ). Também é preciso dar permissão de leitura e escrita para seu App.
-[Titorial para criação das credenciais](https://medium.com/programadores-ajudando-programadores/api-do-twitter-criando-o-app-e-obtendo-os-tokens-28ef3e2a281c) 
+Veja este [tutorial para criação das credenciais.](https://medium.com/programadores-ajudando-programadores/api-do-twitter-criando-o-app-e-obtendo-os-tokens-28ef3e2a281c) 
  
    **3° passo:** crie um arquivo chamado `.env` no diretório principal dos arquivos baixados. Em seguida, adicione nele
 as seguintes informações preenchendo com suas credenciais:
