@@ -72,7 +72,7 @@ BlockList.
 ```python
 from blocklist import BlockList
 blocklist = BlockList()
-blocklist.block(["fulano","siclano","beltrano")]
+blocklist.block(["fulano","siclano","beltrano"])
 ```
 Para desbloquear usuários:
 ```python
